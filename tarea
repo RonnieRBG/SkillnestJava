@@ -1,3 +1,35 @@
+package taream4;
+
+import java.util.Scanner;
+
+public class GestorNOtas {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner teclado=new Scanner(System.in);
+		
+		
+		double nota1, nota2, nota3 ;
+		
+		System.out.println("Ingresa tu nombre :");
+		String nombre = teclado.nextLine();
+		
+		System.out.println(nombre);
+		
+		System.out.println("Ingresa tu primera nota :");
+		nota1 = teclado.nextDouble();
+		
+		System.out.println("Ingresa tu segunda nota :");
+		nota2 = teclado.nextDouble();
+		
+		System.out.println("Ingresa tu tercera nota :");
+		nota3 = teclado.nextDouble();
+		
+		double promedio = (nota1 + nota2 + nota3) / 3;
+		System.out.printf("el promedio de las tres notas es :" + promedio);
+		
+		if (promedio >100 ) {
+			System.out.println("Wow!!, el promedio supera los 100 O_O. Ingresa de nuevo los valores ;D ");
 		}else {
 			if (promedio >= 70) {
 				System.out.println("  Felicidades!!!  " + nombre + " APROBASTE :D ");
@@ -8,7 +40,3 @@
 				teclado.close();
 			}
 		}
-
-	}
-
-}
