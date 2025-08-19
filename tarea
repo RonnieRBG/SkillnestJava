@@ -1,0 +1,14 @@
+		}else {
+			if (promedio >= 70) {
+				System.out.println("  Felicidades!!!  " + nombre + " APROBASTE :D ");
+				
+			} else {
+				System.out.println("  Lo siento :( " + nombre + "  REPROBASTE. Tu promedio estuvo mas bajo de lo esperado.");
+
+				teclado.close();
+			}
+		}
+
+	}
+
+}
